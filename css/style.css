@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&family=Playfair+Display&display=swap');
+
+/*configurações padrão*/
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+ :root {
+    
+ }
+
+body {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "header"
+                         "nav"
+                         "main" 
+                         "aside"
+                         "footer ";
+    height: 100vh;
+}
+
+
+
