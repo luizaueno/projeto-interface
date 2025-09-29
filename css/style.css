@@ -1,5 +1,4 @@
 
-
 /*configurações padrão*/
 * {
     margin:0;
@@ -11,19 +10,106 @@
  :root {
     --font-family:'Arial', sans-serif;
     --font-size-base:16px;
+    --font-size-p:14px;
     --line-height:1.5;
 
-    --color-bg:#fafafa;
-    --color-img-bg:#f2f2f2;
-    --color-card-bg:#f2f2f2;
+    --color-bg:#ffffff;
+    --color-bg-borda:#fafafa;
+    --color-placeholder:#f2f2f2;
+    --color-card-bg:#ffffff;
     --color-button:#40746e;
     --color-text:black;
 
-    --space-sm:3px;
+    --space-sm:5px;
     --space-md:8px;
     --space-lg:24px;
-    --max-width:1400px;
- }
+    --max-width:100%;
+}
+
+body {
+  font-family: var(--font-family);
+  font-size: var(--font-size-base);
+  background-color: var(--color-bg);
+  line-height: var(--line-height);
+  margin: var(--space-sm);
+  min-height: 100vh;
+  max-width: var(--max-width);
+}
+
+header {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+header a {
+  text-decoration: none;
+  color: black;
+  order: 1;
+  font-size: var(--font-size-p);
+}
+
+header input {
+  order: 2;
+  flex: 0 0 auto;
+  width: 125px;
+  padding: var(--space-md);
+  border-radius: 10px;
+}
+
+header input:focus {
+  outline: none;
+  border: 1.2px solid var(--color-button);
+}
+
+header button {
+  order: 2;
+  flex: 0 0 auto;
+  height: auto;
+  display: inline-block;
+  vertical-align: middle;
+  padding: 12px;
+  margin: var(--space-sm);
+  color: var(--color-button);
+  border: 1px solid var(--color-button);
+  border-radius: 10px;
+}
+
+header button:hover {
+  cursor: pointer;
+  color: white;
+  background-color: var(--color-button);
+  transform: scale(1.05);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+footer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-md);
+  padding: 5px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+footer h4 {
+  padding: 15px;
+  margin: 10px;
+  border: 2px solid var(--color-placeholder);
+  border-radius: 10px;
+}
+
+footer::after {
+  content: "© 2025 Meu site • Meu Site";
+  display: block;
+  flex-basis: 100%;
+  margin-top: 20px;
+  font-size: 12px;
+  color: rgba(0, 0, 0, 0.4);
+  pointer-events: none;
+  text-align: left;
+}
+
+@media (min-width:320px) {
 
 body {
     display: grid;
@@ -34,309 +120,161 @@ body {
                          "main" 
                          "aside"
                          "footer ";
-    min-height: 100vh;
-    font-family: var(--font-family);
-    font-size: var(--font-size-base);
-    background-color: var(--color-bg);
-    line-height: var(--line-height);
-    margin: var(--space-sm);
 }
-
 header {
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
-  gap: var(--space-md);
+  gap: var(--space-sm);
   padding: var(--space-sm);
-  width: 50%;
-  
 }
 
 header a {
-    text-decoration: none;
-    color: black;
-    order: 1;
-
-}
-header::after {
-  content: "";
-  flex-basis: 100%;
   order: 1;
 }
-header input {
-    order: 2;
-    flex: 0 0 auto;
-    width: 125px;
-    padding: var(--space-md);
-    border-radius: 10px;
-}
-header input:focus {
-    outline: none;
-    border: 1.2px solid  var(--color-button);
-}
+
+header input,
 header button {
-    order: 2;
-    flex: 0 0 auto;  
-    margin: var(--space-sm);
-    height: auto;
-    display: inline-block;
-    vertical-align: middle;
-    padding: 12px;
-    color: var(--color-button);
-    border: 1px solid var(--color-button);
-    border-radius: 10px;
+  order: 2;
+}
+header input {
+ 
+    width: 130px;
+    padding: var(--space-sm);
 }
 
-header button:hover {
-    cursor: pointer;
-    color: white;
-    background-color: var(--color-button);
-    transform: scale(1.05);
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+
+.container {
+    background-color: var(--color-bg-borda);
+    border: 8px solid var(--color-bg-borda);
+    outline: 5px solid var(--color-bg-borda);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
 }
+
+
 footer {
-    display: flex;
-    flex-wrap: wrap;  /* permite quebrar linhas */
-    gap: var(--space-md);
-    padding: 5px;
-    width: 100%;
     max-width: var(--max-width);
-    margin: 0 auto;
 }
 
 footer h4 {
-   padding: 15px;
-   margin: 5px;
-   border: 2px solid var(--color-card-bg);
-   border-radius: 10px;
    max-height: 40px;
+   width: 120px;
 }
-
-/* Força o 3º e 4º h4 para a segunda linha */
-footer h4:nth-of-type(3),
-footer h4:nth-of-type(4) {
-    flex-basis: 25%; 
-    padding: 10px;
-}
-
-/* Força o 5º h4 para a terceira linha */
-footer h4:nth-of-type(5) {
-    flex-basis: 25%; 
-}
-
-footer::after {
-  content: "© 2025 Meu site • Meu Site";
-  display: block;
-  flex-basis: 100%;
-  margin-top: 20px;     /* distância dos h4 */
-  font-size: 12px;
-  color: rgba(0, 0, 0, 0.4);
-  pointer-events: none;
-  text-align: left;
 }
 
 
-@media (min-width: 600px) {
+@media (min-width: 768px) {
+
 header {
   display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: var(--space-md);
-  padding: var(--space-sm);
-  width: 50%;
-  
+  flex-wrap: wrap; /* ou nowrap, dependendo do layout desejado */
+  align-items: center; /* alinha verticalmente */
+  padding: var(--space-md);
 }
 
 header a {
-    text-decoration: none;
-    color: black;
-    order: 1;
-
-}
-header::after {
-  content: "";
-  flex-basis: 100%;
-  order: 1;
+  padding: var(--space-sm); /* ou var(--space-md) para equilíbrio */
+  flex: 0 0 auto; /* impede que ele estique ou quebre linha */
+  align-self: center; /* garante alinhamento vertical */
 }
 header input {
-    order: 2;
-    flex: 0 0 auto;
-    width: 125px;
-    padding: var(--space-md);
-    border-radius: 10px;
-}
-header input:focus {
-    outline: none;
-    border: 1.2px solid  var(--color-button);
-}
-header button {
-    order: 2;
-    flex: 0 0 auto;  
-    margin: var(--space-sm);
-    height: auto;
-    display: inline-block;
-    vertical-align: middle;
-    padding: 12px;
-    color: var(--color-button);
-    border: 1px solid var(--color-button);
-    border-radius: 10px;
-}
+    padding: 10px;
 
-header button:hover {
-    cursor: pointer;
-    color: white;
-    background-color: var(--color-button);
-    transform: scale(1.05);
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
-}
-footer {
-    display: flex;
-    flex-wrap: wrap;  /* permite quebrar linhas */
-    gap: var(--space-md);
-    padding: 5px;
-    width: 100%;
-    max-width: var(--max-width);
-    margin: 0 auto;
 }
 
 footer h4 {
-   padding: 15px;
-   margin: 5px;
-   border: 2px solid var(--color-card-bg);
-   border-radius: 10px;
-   max-height: 40px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+   max-height: 80px;
+   width: 100px;
 }
-
-/* Força o 3º e 4º h4 para a segunda linha */
-footer h4:nth-of-type(3),
-footer h4:nth-of-type(4) {
-    flex-basis: 25%; 
-    padding: 10px;
-}
-
-/* Força o 5º h4 para a terceira linha */
-footer h4:nth-of-type(5) {
-    flex-basis: 25%; 
-}
-
 footer::after {
-  content: "© 2025 Meu site • Meu Site";
-  display: block;
-  flex-basis: 100%;
-  margin-top: 20px;     /* distância dos h4 */
-  font-size: 12px;
-  color: rgba(0, 0, 0, 0.4);
-  pointer-events: none;
-  text-align: left;
+    margin-top: 2px;
 }
-
-
 }
-
 @media (min-width: 1024px) {
-  body {
-    grid-template-columns: 1fr 3fr;
-    grid-template-areas: 
-      "header header"
-      "nav main"
-      "aside main"
-      "footer footer";
-    margin: 0 auto;
-    max-width: var(--max-width);
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 8px;
+    padding: 24px 32px;
+    background-color: var(--color-bg);
   }
 
-  header {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: var(--space-md);
-  padding: var(--space-sm);
-  width: 50%;
-  
-}
+  header a {
+    font-size: 1rem;
+    padding: 12px;
+  }
 
-header a {
-    text-decoration: none;
-    color: black;
-    order: 1;
+  header input {
+    width: 280px;
+    padding: 10px;
+  }
+ 
 
-}
-header::after {
-  content: "";
-  flex-basis: 100%;
-  order: 1;
-}
-header input {
-    order: 2;
+  header button {
     flex: 0 0 auto;
-    width: 125px;
-    padding: var(--space-md);
-    border-radius: 10px;
-}
-header input:focus {
-    outline: none;
-    border: 1.2px solid  var(--color-button);
-}
-header button {
-    order: 2;
-    flex: 0 0 auto;  
-    margin: var(--space-sm);
-    height: auto;
+    padding: 10px 20px;
+    font-size: 14px;
+    line-height: 1;
+    border: 1px solid var(--color-button);
+    border-radius: 8px;
+    margin: 0;
+    width: 90px;
+    background-color: #fff;
+    color: var(--color-button);
+    box-sizing: border-box;
     display: inline-block;
     vertical-align: middle;
-    padding: 12px;
-    color: var(--color-button);
-    border: 1px solid var(--color-button);
-    border-radius: 10px;
-}
+  }
 
-header button:hover {
+  header button:hover {
     cursor: pointer;
-    color: white;
     background-color: var(--color-button);
+    color: white;
     transform: scale(1.05);
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
-}
-footer {
-    display: flex;
-    flex-wrap: wrap;  /* permite quebrar linhas */
-    gap: var(--space-md);
-    padding: 5px;
-    width: 100%;
-    max-width: var(--max-width);
-    margin: 0 auto;
+  }
+
+
+
+
+  footer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap; /* impede quebra de linha */
+  justify-content: space-between; /* distribui os h4 igualmente */
+  align-items: center; /* alinha verticalmente */
+  padding: 32px;
+  background-color: var(--color-bg);
+  gap: 16px;
+  overflow-x: auto; /* permite rolagem se não couber tudo */
 }
 
 footer h4 {
-   padding: 15px;
-   margin: 5px;
-   border: 2px solid var(--color-card-bg);
-   border-radius: 10px;
-   max-height: 40px;
+  flex: 0 0 auto; /* cada h4 mantém seu tamanho natural */
+  width: 100%; /* ou defina uma largura fixa como 180px */
+  max-width: 180px;
+  text-align: center;
+  padding: 12px;
+  margin-top: -5px;
+  background-color: #fff;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
 }
-
-/* Força o 3º e 4º h4 para a segunda linha */
-footer h4:nth-of-type(3),
-footer h4:nth-of-type(4) {
-    flex-basis: 25%; 
-    padding: 10px;
-}
-
-/* Força o 5º h4 para a terceira linha */
-footer h4:nth-of-type(5) {
-    flex-basis: 25%; 
-}
-
 footer::after {
-  content: "© 2025 Meu site • Meu Site";
-  display: block;
-  flex-basis: 100%;
-  margin-top: 20px;     /* distância dos h4 */
-  font-size: 12px;
-  color: rgba(0, 0, 0, 0.4);
-  pointer-events: none;
-  text-align: left;
+    position: relative;
+    right: 1100px;
+    top: 30px;
+    content: "© 2025 Meu site • Meu Site";
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-size: 12px;
+    color: rgba(0, 0, 0, 0.3);
+    margin-top: 95px;
+    padding-bottom: 16px;
 }
-
-
 }
