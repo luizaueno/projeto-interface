@@ -190,7 +190,7 @@ nav button:first-of-type{
     flex-direction: row;
     transform: translateY(-70px);
     gap: 60px;
-    
+
 }
       h4:first-of-type {
         display: flex;
@@ -243,4 +243,5 @@ nav button:first-of-type{
   
 
     
+}
 }
