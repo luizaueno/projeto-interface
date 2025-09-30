@@ -181,6 +181,7 @@ nav button:first-of-type{
     background-color: var(--color-button);
     color: white;
 }
+
 .categorias-title {
     transform: translateY(-80px);
 }
@@ -189,8 +190,9 @@ nav button:first-of-type{
     flex-direction: row;
     transform: translateY(-70px);
     gap: 60px;
-
-    h4:first-of-type {
+    
+}
+      h4:first-of-type {
         display: flex;
         border: 5px solid var(--color-bg-borda);
         background-color: var(--color-card-bg);
@@ -200,6 +202,7 @@ nav button:first-of-type{
         width: 250px;
         height: 120px;
     }
+
     h4:nth-of-type(2){
         display: flex;
         border: 5px solid var(--color-bg-borda);
@@ -210,6 +213,7 @@ nav button:first-of-type{
         width: 250px;
         height: 120px;
     }
+
     h4:last-of-type {
         display: flex;
         border: 5px solid var(--color-bg-borda);
@@ -220,12 +224,23 @@ nav button:first-of-type{
         width: 250px;
         height: 120px;
     }
+}
 
-    .categorias-geral h4 {
-        position: relative;
-        top: -70px;
-        color: red;
-        background: yellow;
+    .categorias-geral {
+        transform: translateY(-40px);
+    }
+
+    .lista-categorias {
+         display: flex;
+        border: 5px solid var(--color-bg-borda);
+        background-color: var(--color-card-bg);
+        border-width: 50px;
+       
     }
 }
+
+
+  
+
+    
 }
