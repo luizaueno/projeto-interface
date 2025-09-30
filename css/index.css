@@ -112,6 +112,7 @@ nav button:first-of-type{
     transform: translateY(-70px);
     gap: 60px;
 
+    
     h4:first-of-type {
         display: flex;
         border: 5px solid var(--color-bg-borda);
@@ -191,8 +192,8 @@ nav button:first-of-type{
     transform: translateY(-70px);
     gap: 60px;
 
-}
-      h4:first-of-type {
+
+    h4:first-of-type {
         display: flex;
         border: 5px solid var(--color-bg-borda);
         background-color: var(--color-card-bg);
@@ -223,25 +224,37 @@ nav button:first-of-type{
         margin: 5px;
         width: 250px;
         height: 120px;
-    }
-}
+    }}
 
     .categorias-geral {
         transform: translateY(-40px);
     }
 
-    .lista-categorias {
-         display: flex;
-        border: 5px solid var(--color-bg-borda);
-        background-color: var(--color-card-bg);
-        border-width: 50px;
-       
-    }
+   .lista-categorias {
+    display: flex;
+    flex-wrap: wrap; /* permite quebrar linha se não couber */
+    gap: 10px; /* espaçamento entre os p's */
+    justify-content: center; /* centraliza os itens */
+    padding: 10px;
+    margin-top: -40px;
+}
+
+.lista-categorias p {
+  border: 3px solid var(--color-bg-borda);
+  background-color: var(--color-card-bg);
+  padding: 20px;
+  margin: 0;
+  width: 100px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  font-weight: bold;
+  border-radius: 8px;
 }
 
 
-  
 
-    
-}
+
 }
