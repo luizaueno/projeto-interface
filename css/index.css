@@ -1,5 +1,16 @@
 @media (min-width:320px) {
-    nav {
+
+header input, header button{
+    border: 1px solid red;
+    position: relative;
+    bottom: -30px;
+    left: -290px;
+    margin: 0;
+}
+header input {
+    width:130px;
+}
+nav {
     margin: var(--space-lg);
 }
 
