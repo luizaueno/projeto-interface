@@ -1,10 +1,9 @@
-@media (min-width:320px) {
 
 header input, header button{
-    border: 1px solid red;
     position: relative;
-    bottom: -30px;
-    left: -290px;
+    bottom: 5px;
+    margin-right: 90px;
+    margin-left: 120px;
     margin: 0;
 }
 header input {
@@ -20,8 +19,8 @@ nav p {
 }
 
 nav img {
-    width: 250px;
-    transform: translate(300px, -80px);
+    width: 200px;
+    margin: 120px;
 }
 
 nav button {
@@ -220,7 +219,7 @@ aside li::before {
     width: 1em;         
     margin-left: -1em;  
 }
-}
+
 
 
 @media (min-width:768px) {
@@ -451,6 +450,11 @@ aside li::before {
 
 @media (min-width:1024px) {
   
+header input {
+    position: relative;
+    bottom: 4px;
+ 
+}
 nav {
     margin: var(--space-lg);
 }
@@ -462,7 +466,8 @@ nav p {
 
 nav img {
     width: 250px;
-    transform: translate(300px, -80px);
+    transform: translate( -30px -70px);
+    transform: translateY(-90px);
 }
 
 nav button {

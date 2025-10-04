@@ -23,7 +23,7 @@
     --space-sm:5px;
     --space-md:8px;
     --space-lg:24px;
-    --max-width:100%;
+    --max-width:1200px;
 }
 
 body {
@@ -31,9 +31,10 @@ body {
   font-size: var(--font-size-base);
   background-color: var(--color-bg);
   line-height: var(--line-height);
-  margin: var(--space-sm);
+  margin: 0 auto;
   min-height: 100vh;
   max-width: var(--max-width);
+
 }
 
 header {
@@ -109,7 +110,7 @@ footer::after {
   text-align: left;
 }
 
-@media (min-width:320px) {
+
 
 body {
     display: grid;
@@ -159,7 +160,7 @@ footer h4 {
    max-height: 40px;
    width: 120px;
 }
-}
+
 
 
 @media (min-width: 768px) {
@@ -180,17 +181,21 @@ header input {
     padding: 5px;
 
 }
-
 footer h4 {
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-   max-height: 80px;
-   width: 100px;
+  text-align: center;
+  max-height: 80px;
+  width: 100px;
+  margin: 0 auto; /* centraliza horizontalmente */
 }
+
 footer::after {
-    margin-top: 2px;
+  display: block;
+  text-align: center;
+  margin-top: 20px;
+  font-size: 12px;
+  color: rgba(0, 0, 0, 0.4);
 }
+
 }
 
 @media (min-width: 1024px) {
@@ -239,8 +244,6 @@ footer::after {
   }
 
 
-
-
   footer {
   display: flex;
   flex-direction: row;
@@ -267,7 +270,6 @@ footer h4 {
 }
 footer::after {
     position: relative;
-    right: 1100px;
     top: 30px;
     content: "© 2025 Meu site • Meu Site";
     display: block;
