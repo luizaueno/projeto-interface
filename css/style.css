@@ -13,6 +13,7 @@
   --font-size-base: 16px;
   --font-size-p: 14px;
 
+
   --color-bg: #ffffff;
   --color-bg-borda: #fafafa;
   --color-placeholder: #f2f2f2;
@@ -26,10 +27,26 @@
   --max-width: 1200px;
 }
 
+
 /* ============================
    LAYOUT GERAL
 ============================ */
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.grid-coluns-2 {
+grid-template-columns: 20% 80%;
+}
+
+.color {
+  background-color: yellow;
+}
+
 body {
+  
   font-family: var(--font-family);
   font-size: var(--font-size-base);
   background-color: var(--color-bg);
@@ -47,10 +64,7 @@ body {
     "footer";
 }
 
-.grid {
-  display: grid;
-  grid-template-columns: 1fr;
-}
+
 
 /* ============================
    HEADER
