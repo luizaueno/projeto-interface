@@ -1,35 +1,19 @@
 
-
 header {
   display: flex;
   flex-direction: row;
- 
   margin: 10px;
 }
 
-header input,
-header button {
-  margin: 10px;
-  width: 130px;
-}
-
-header button:last-of-type {
-    position: relative;
-    top: -65.5px;
-    right: -300px;
-}
-header input, header button {
-    position: relative;
-    bottom: 5px;
-    margin-right: 90px;
-    margin-left: 120px;
-    margin: 0;
-
-}
 
 header input {
-  padding: 5px;
+    margin: 2px;
+    position: relative;
+    bottom: -5px;
+    margin-left: 30px;
+    width: 130px;
 }
+
 
 /* Nav */
 nav {
@@ -529,7 +513,7 @@ nav button {
     padding: var(--space-md);
     border: 1px solid var(--color-button);
     border-radius: 10px;
-    transform: translateY(-150px);
+    transform: translateY(-80px);
 }
 
 nav button:first-of-type{

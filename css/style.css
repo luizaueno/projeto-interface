@@ -11,7 +11,6 @@
     --font-family:'Arial', sans-serif;
     --font-size-base:16px;
     --font-size-p:14px;
-    --line-height:1.5;
 
     --color-bg:#ffffff;
     --color-bg-borda:#fafafa;
@@ -26,7 +25,21 @@
     --max-width:1200px;
 }
 
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.grid-coluns-2 {
+grid-template-columns: 20% 80%;
+}
+
+.color {
+  background-color: yellow;
+}
+
 body {
+  
   font-family: var(--font-family);
   font-size: var(--font-size-base);
   background-color: var(--color-bg);
