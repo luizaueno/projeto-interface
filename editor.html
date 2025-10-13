@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Fila de comentários</title>
+  <title>Escolhas do Editor</title>
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
@@ -20,10 +20,10 @@
         </nav>
       </div>
       <div class="search-row">
-        <label for="buscar" class="sr-only">Buscar</label>
-        <input id="buscar" type="search" placeholder="Buscar..." aria-label="Buscar">
-        <button class="btn">Buscar</button>
-        <button class="btn">Entrar</button>
+        <label for="buscar-posts" class="sr-only">Buscar</label>
+        <input id="buscar-posts" type="search" placeholder="Buscar..." aria-label="Buscar posts">
+        <button class="btn" type="button">Buscar</button>
+        <button class="btn" type="button">Entrar</button>
       </div>
     </div>
   </header>
@@ -50,47 +50,33 @@
           <div class="stat"><div class="muted">Pendências</div><strong>7</strong></div>
         </div>
 
-        <section class="card panel" aria-labelledby="comments-title">
-          <h2 id="comments-title" class="h3">Fila de comentários</h2>
+        <section class="card panel" aria-labelledby="editor-title">
+          <h2 id="editor-title" class="h3">Escolhas do Editor</h2>
+          <div class="editor-search">
+            <label for="buscar-editor" class="muted">Buscar posts</label>
+            <input id="buscar-editor" type="search" placeholder="Buscar posts..." aria-label="Buscar posts">
+          </div>
 
-          <label for="buscar-comentarios" class="muted">Buscar comentários</label>
-          <input id="buscar-comentarios" type="search" placeholder="Buscar comentários..." aria-label="Buscar comentários">
-
-          <div role="list" aria-label="Lista de comentários">
+          <div role="list" aria-label="Lista de posts">
             <article class="post-item" role="listitem">
-              <div>Comentário #1 — Usuário 1 — Em revisão</div>
-              <div>
-                <button class="action-btn">Aprovar</button>
-                <button class="action-btn">Reprovar</button>
-              </div>
+              <div>Post #1</div>
+              <div><button class="action-btn" type="button">Remover</button></div>
             </article>
             <article class="post-item" role="listitem">
-              <div>Comentário #2 — Usuário 2 — Em revisão</div>
-              <div>
-                <button class="action-btn">Aprovar</button>
-                <button class="action-btn">Reprovar</button>
-              </div>
+              <div>Post #2</div>
+              <div><button class="action-btn" type="button">Agendar</button></div>
             </article>
             <article class="post-item" role="listitem">
-              <div>Comentário #3 — Usuário 3 — Em revisão</div>
-              <div>
-                <button class="action-btn">Aprovar</button>
-                <button class="action-btn">Reprovar</button>
-              </div>
+              <div>Post #3</div>
+              <div><button class="action-btn" type="button">Agendar</button></div>
             </article>
             <article class="post-item" role="listitem">
-              <div>Comentário #4 — Usuário 4 — Em revisão</div>
-              <div>
-                <button class="action-btn">Aprovar</button>
-                <button class="action-btn">Reprovar</button>
-              </div>
+              <div>Post #4</div>
+              <div><button class="action-btn" type="button">Remover</button></div>
             </article>
             <article class="post-item" role="listitem">
-              <div>Comentário #5 — Usuário 5 — Em revisão</div>
-              <div>
-                <button class="action-btn">Aprovar</button>
-                <button class="action-btn">Reprovar</button>
-              </div>
+              <div>Post #5</div>
+              <div><button class="action-btn" type="button">Agendar</button></div>
             </article>
           </div>
         </section>
