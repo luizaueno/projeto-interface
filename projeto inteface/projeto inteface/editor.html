@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Escolhas do Editor</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="header">
+    <div class="container topbar">
+      <div class="brand">
+        <h1>HABIT</h1>
+        <nav aria-label="principal" style="margin-left:1rem;">
+          <a href="#">Início</a> 
+          <a href="#">Páginas</a> 
+          <a href="#">Destaques</a> 
+          <a href="#">Assinar</a> 
+          <a href="#">Admin</a>
+        </nav>
+      </div>
+      <div class="search-row">
+        <label for="buscar-posts" class="sr-only">Buscar</label>
+        <input id="buscar-posts" type="search" placeholder="Buscar..." aria-label="Buscar posts">
+        <button class="btn" type="button">Buscar</button>
+        <button class="btn" type="button">Entrar</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="dashboard">
+      <aside class="card sidebar" aria-labelledby="menu-title">
+        <h2 id="menu-title" class="h3">Menu</h2>
+        <ul>
+          <li>Categorias</li>
+          <li>Criar Post</li>
+          <li>Escolhas do Editor</li>
+          <li>Usuários</li>
+          <li>Fila de revisão</li>
+          <li>Fila de comentários</li>
+        </ul>
+      </aside>
+
+      <div>
+        <div class="card stats" role="region" aria-label="Estatísticas rápidas">
+          <div class="stat"><div class="muted">Posts</div><strong>128</strong></div>
+          <div class="stat"><div class="muted">Visualizações</div><strong>54k</strong></div>
+          <div class="stat"><div class="muted">Inscritos</div><strong>12k</strong></div>
+          <div class="stat"><div class="muted">Pendências</div><strong>7</strong></div>
+        </div>
+
+        <section class="card panel" aria-labelledby="editor-title">
+          <h2 id="editor-title" class="h3">Escolhas do Editor</h2>
+          <div class="editor-search">
+            <label for="buscar-editor" class="muted">Buscar posts</label>
+            <input id="buscar-editor" type="search" placeholder="Buscar posts..." aria-label="Buscar posts">
+          </div>
+
+          <div role="list" aria-label="Lista de posts">
+            <article class="post-item" role="listitem">
+              <div>Post #1</div>
+              <div><button class="action-btn" type="button">Remover</button></div>
+            </article>
+            <article class="post-item" role="listitem">
+              <div>Post #2</div>
+              <div><button class="action-btn" type="button">Agendar</button></div>
+            </article>
+            <article class="post-item" role="listitem">
+              <div>Post #3</div>
+              <div><button class="action-btn" type="button">Agendar</button></div>
+            </article>
+            <article class="post-item" role="listitem">
+              <div>Post #4</div>
+              <div><button class="action-btn" type="button">Remover</button></div>
+            </article>
+            <article class="post-item" role="listitem">
+              <div>Post #5</div>
+              <div><button class="action-btn" type="button">Agendar</button></div>
+            </article>
+          </div>
+        </section>
+      </div>
+    </section>
+
+    <footer style="grid-area: footer;">
+    <h4>Instagram</h4>
+    <h4>Work</h4>
+    <h4>Bags</h4>
+    <h4>Lamp</h4>
+    <h4>Books</h4>
+  </footer>
+
+    <footer class="muted" style="padding: .5rem 0;">© 2025 Meu Site · Meu site</footer>
+  </main>
+</body>
+</html>

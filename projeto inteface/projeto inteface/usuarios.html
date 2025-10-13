@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Usuários</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="header">
+    <div class="container topbar">
+      <div class="brand">
+        <span>HABIT</span>
+        <nav aria-label="principal" style="margin-left:1rem;">
+          <a href="#">Início</a> 
+          <a href="#">Páginas</a> 
+          <a href="#">Destaques</a> 
+          <a href="#">Assinar</a> 
+          <a href="#">Admin</a>
+        </nav>
+      </div>
+      <div class="search-row">
+        <input id="buscar-usuarios" type="search" placeholder="Buscar usuários..." aria-label="Buscar usuários">
+        <button class="btn" type="button">Buscar</button>
+        <button class="btn" type="button">Entrar</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="dashboard">
+      <aside class="card sidebar" aria-labelledby="menu-title-2">
+        <h2 id="menu-title-2" class="h3">Menu</h2>
+        <nav aria-label="Menu principal">
+          <ul>
+            <li>Categorias</li>
+            <li>Criar Post</li>
+            <li>Escolhas do Editor</li>
+            <li>Usuários</li>
+            <li>Fila de revisão</li>
+            <li>Fila de comentários</li>
+          </ul>
+        </nav>
+      </aside>
+
+      <div>
+        <div class="card stats" role="region" aria-label="Estatísticas rápidas">
+          <div class="stat"><div class="muted">Posts</div><strong>128</strong></div>
+          <div class="stat"><div class="muted">Visualizações</div><strong>54k</strong></div>
+          <div class="stat"><div class="muted">Inscritos</div><strong>12k</strong></div>
+          <div class="stat"><div class="muted">Pendências</div><strong>7</strong></div>
+        </div>
+
+        <section class="card panel" aria-labelledby="users-title">
+          <h2 id="users-title" class="h3">Usuários</h2>
+
+          <label for="buscar-usuarios" class="muted">Buscar usuários</label>
+          <input id="buscar-usuarios" type="search" placeholder="Buscar usuários..." aria-label="Buscar usuários">
+
+          <table class="table" aria-label="Tabela de usuários">
+            <thead>
+              <tr>
+                <th>Usuário</th>
+                <th>E-mail</th>
+                <th>Status</th>
+                <th>Ações</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Usuário #1</td>
+                <td>email@teste.com</td>
+                <td>Ativo</td>
+                <td><button class="action-btn" type="button" aria-label="Bloquear Usuário #1">Bloquear</button></td>
+              </tr>
+              <tr>
+                <td>Usuário #2</td>
+                <td>email@teste.com</td>
+                <td>Ativo</td>
+                <td><button class="action-btn" type="button" aria-label="Bloquear Usuário #2">Bloquear</button></td>
+              </tr>
+              <tr>
+                <td>Usuário #3</td>
+                <td>email@teste.com</td>
+                <td>Bloqueado</td>
+                <td><button class="action-btn" type="button" aria-label="Desbloquear Usuário #3">Desbloquear</button></td>
+              </tr>
+              <tr>
+                <td>Usuário #4</td>
+                <td>email@teste.com</td>
+                <td>Ativo</td>
+                <td><button class="action-btn" type="button" aria-label="Bloquear Usuário #4">Bloquear</button></td>
+              </tr>
+              <tr>
+                <td>Usuário #5</td>
+                <td>email@teste.com</td>
+                <td>Ativo</td>
+                <td><button class="action-btn" type="button" aria-label="Bloquear Usuário #5">Bloquear</button></td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+      </div>
+    </section>
+
+    <footer style="grid-area: footer;">
+    <h4>Instagram</h4>
+    <h4>Work</h4>
+    <h4>Bags</h4>
+    <h4>Lamp</h4>
+    <h4>Books</h4>
+  </footer>
+
+    <footer class="muted">© 2025 Meu Site · Meu site</footer>
+  </main>
+</body>
+</html>
