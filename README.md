@@ -1,29 +1,52 @@
-## Blog Responsivo
-# Descrição
-Blog para controle do autor sobre suas postagens, com diversas categorias, destaques, newsletter, opções de editar ou excluir, tela de login e cadastro, feito com HTML e CSS. O objetivo é facilitar a gestão para administradores de blogs, oferecendo maior organização e agilidade.
+# Projeto: Construção de Interfaces 
 
-# Instruções de uso
-Clone o repositório em seu editor de código favorito.
+## Telas 
+- `editor.html` — Escolhas do Editor
+- `usuarios.html` — Usuários
+- `comentarios.html` — Fila de comentários
 
-Abra os arquivos .html em um navegador para utilizar o blog.
+## Descrição Geral
+Este projeto tem como objetivo a criação de um painel administrativo simples e responsivo utilizando apenas HTML5 e CSS, reproduzindo as telas do exercício proposto.
 
-# Licença
-Este projeto está sob a licença MIT. Veja o arquivo LICENSE para mais detalhes.
+O painel foi desenvolvido para o site fictício, contendo páginas de gerenciamento de conteúdo e usuários.  
 
-# Badges
+## Telas Implementadas
 
-# Contribuição
-Contribuições são bem-vindas! Para colaborar com este projeto:
+1. **Escolhas do Editor (`editor.html`)**  
+   - Exibe uma lista de posts com botões para Agendar ou Remover.  
+   - Inclui campo de busca e estatísticas no topo.  
 
-Faça um fork do repositório.
+2. **Usuários (`usuarios.html`)**  
+   - Mostra uma tabela com colunas Usuário, E-mail*, Status e Ações.  
+   - Permite ações de Bloquear ou Desbloquear.  
 
-Crie uma branch com sua melhoria (git checkout -b minha-feature).
+3. **Fila de Comentários (`comentarios.html`)**  
+   - Lista de comentários com botões Aprovar e Reprovar.  
+   - Cada item mostra o autor, o status e os botões organizados à direita.  
 
-Faça commits com mensagens claras e objetivas.
+Todas as telas possuem:
+- Cabeçalho com logotipo, menu e campo de busca;
+- Menu lateral de navegação;
+- Cards de estatísticas;
+- Área principal para exibição dos dados;
+- Rodapé com seções e direitos autorais.
 
-Envie um pull request explicando suas alterações.
 
-Se tiver dúvidas, abra uma issue para conversarmos.
+## Decisões de Layout
 
-# Contribuidores
-Luiza Akemi Macedo Ueno
+- O layout base foi construído utilizando CSS Grid para dividir a tela entre o menu lateral e o conteúdo principal.  
+- Dentro de cada seção cards, tabelas e listas, utilizou-se Flexbox para alinhar elementos horizontalmente e posicionar os botões à direita.  
+- As cores e espaçamentos foram definidos com variáveis CSS no `:root`, facilitando a padronização.   
+
+## Breakpoints Utilizados
+
+## Contribuição
+- Criação da estrutura HTML das páginas: comentarios, editor e usuarios
+
+
+## Contribuidores
+Cinthia Chambilla Tito
+
+
+
+
